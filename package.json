@@ -1,0 +1,19 @@
+{
+  "name": "hapi-raout",
+  "version": "1.0.0",
+  "description": "Express-style route declarations for Hapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjornlll/hapi-raout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjornlll/hapi-raout/issues"
+  },
+  "homepage": "https://github.com/bjornlll/hapi-raout#readme"
+}
