@@ -32,7 +32,7 @@ function noopHandler(path, method, options) {
   return routeHasHandler ? {} : { handler: () => `${method.toUpperCase()} ${path} - NOOP` };
 }
 
-export default {
+module.exports = {
   name: 'hapi-raout',
   version: '1.0.0',
   async register(server, { useNoopHandler = false }) {
