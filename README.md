@@ -1,4 +1,4 @@
-# HAPI Raut
+# Hapi Raout
 Adds express-style, `.get()`, `.post()`, route decorators to Hapi.
 
 ## Example
@@ -39,9 +39,9 @@ await server.register({
   plugin: pluginExpressRoutes,
   options: { useNoopHandler: false },
 })
-```;
+```
 
-If `useNoopHandler` is set to `true`, hapi-raut will automatically generate a placeholder route handlers if you didn’t provide a handler yourself.
+If `useNoopHandler` is set to `true`, hapi-raout will automatically generate a placeholder route handlers if you didn’t provide a handler yourself.
 
 ### Methods
  * `server.checkout(path, options)`
