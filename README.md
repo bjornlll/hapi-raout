@@ -1,6 +1,11 @@
 # Hapi Raout
 Adds express-style, `.get()`, `.post()`, route decorators to Hapi.
 
+## Install
+```shell
+npm install --save hapi-raout
+```
+
 ## Example
 The following two route declarations are equivalent: 
 ```javascript
@@ -34,9 +39,11 @@ server.route({
 
 ## API
 ### Register plugin
+const hapiRaout = require('hapi-raout');
+
 ```javascript
 await server.register({
-  plugin: pluginExpressRoutes,
+  plugin: hapiRaout,
   options: { useNoopHandler: false },
 })
 ```
