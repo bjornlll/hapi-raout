@@ -33,8 +33,8 @@ function noopHandler(path, method, options) {
 }
 
 export default {
-  name: 'express-style-route-decorators',
-  version: '0.0.1',
+  name: 'hapi-raout',
+  version: '1.0.0',
   async register(server, { useNoopHandler = false }) {
     methods.forEach((method) => {
       server.decorate('server', method, function decorator(path, options = {}) {
