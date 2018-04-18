@@ -25,9 +25,9 @@ server.route({
 	method,
 	path,
 	handler() {
-	  // A handler returning "${method} ${path} - NOOP" will be automatically
-    // generated for "server.post('/api/v1/cat');"
-	  return 'POST /api/v1/cat - NOOP';
+		// A handler returning "${method} ${path} - NOOP" will be automatically
+		// generated for "server.post('/api/v1/cat');"
+		return 'POST /api/v1/cat - NOOP';
 	}
 })
 ```
@@ -36,8 +36,8 @@ server.route({
 ### Register plugin
 ```javascript
 await server.register({
-  plugin: pluginExpressRoutes,
-  options: { useNoopHandler: false },
+	plugin: pluginExpressRoutes,
+	options: { useNoopHandler: false },
 })
 ```
 
