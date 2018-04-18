@@ -9,11 +9,11 @@ server.post('/api/v1/cat', { handler() { return "Meow"; } })
 
 // Equivalent hapi route declaration
 server.route({
-	method: 'POST',
-	path: '/api/v1/cat',
-	handler() {
-		return "Meow";
-	}
+  method: 'POST',
+  path: '/api/v1/cat',
+  handler() {
+    return "Meow";
+  }
 });
 ```
 
@@ -22,13 +22,13 @@ Further, if plugin option  `useNoopHandler`  is `true` then the following two ro
 server.post('/api/v1/cat');
 
 server.route({
-	method,
-	path,
-	handler() {
-		// A handler returning "${method} ${path} - NOOP" will be automatically
-		// generated for "server.post('/api/v1/cat');"
-		return 'POST /api/v1/cat - NOOP';
-	}
+  method,
+  path,
+  handler() {
+    // A handler returning "${method} ${path} - NOOP" will be automatically
+    // generated for "server.post('/api/v1/cat');"
+    return 'POST /api/v1/cat - NOOP';
+  }
 })
 ```
 
@@ -36,8 +36,8 @@ server.route({
 ### Register plugin
 ```javascript
 await server.register({
-	plugin: pluginExpressRoutes,
-	options: { useNoopHandler: false },
+  plugin: pluginExpressRoutes,
+  options: { useNoopHandler: false },
 })
 ```
 
